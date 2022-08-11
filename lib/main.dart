@@ -89,13 +89,14 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       home: LoaderOverlay(
-          useDefaultLoading: false,
-          overlayWidget: Center(
-              child: SpinKitSpinningLines(
-            color: Colors.teal,
-            size: 50.0,
-          )),
-          child: SplashScreen()),
+        useDefaultLoading: false,
+        overlayWidget: Center(
+            child: SpinKitSpinningLines(
+          color: Colors.teal,
+          size: 50.0,
+        )),
+        child: HomeScreen(),
+      ),
     );
   }
 }
